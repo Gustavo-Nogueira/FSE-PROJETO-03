@@ -3,7 +3,7 @@
 ## Descrição
 
 - Frontend React 
-- Persistência dos Dados: Local Storage 
+- Persistência dos Dados: Local Storage do Navegador
 
 ## Uso
 
