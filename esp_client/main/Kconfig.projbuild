@@ -1,0 +1,31 @@
+menu "WiFi Configuration"
+    config ESP_WIFI_SSID
+        string "WiFi SSID"
+        default "ssid"
+        help 
+           WiFi network name.
+
+    config ESP_WIFI_PASSWORD
+        string "WiFi Password"
+        default "my_password"
+        help 
+            WiFi Password (WPA or WPA2).
+    
+    config ESP_MAXIMUM_RETRY
+        int "Maximum number of connection attempts"
+        default 5
+        help
+            Configure the maximum value of connection attempts.
+endmenu
+
+menu "Device Mode"
+    config DEVICE_MODE
+        choice
+            bool "Select a Mode"
+                default NORMAL_POWER_MODE
+            config LOW_POWER_MODE
+                bool "Low Power Mode"
+            config NORMAL_POWER_MODE
+                bool "Normal Power Mode"
+        endchoice
+endmenu
