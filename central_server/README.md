@@ -2,7 +2,7 @@
 
 # Uso
 
-Cria e inicia os contêineres:
+Crie e inicie os contêineres:
 ```
 docker-compose up
 ```
